@@ -1,0 +1,16 @@
+@import "../lib/utils";
+
+
+footer{
+  padding: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  // border: 1px solid red;
+  a {
+    color: $Footer-text;
+    text-decoration: none;
+  }
+}

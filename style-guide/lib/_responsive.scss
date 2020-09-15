@@ -1,0 +1,46 @@
+@media screen and (min-width: 1024px) {
+  header {
+    padding-bottom: 10em;
+    display: flex;
+    justify-content: center;
+    .theme-toggler {
+      align-items: center;
+    }
+
+    .switch {
+      margin-left: 2em;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    min-width: 1170px;
+    h1 {
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+
+  section {
+    margin-top: -110px;
+    display: flex;
+    justify-content: center;
+    > .container {
+      padding: 0;
+      display: block;
+    }
+    .card-layout {
+      flex-flow: row wrap;
+      .card {
+        padding: 2em 5.5em;
+      }
+      .overview {
+        flex: 0 1 calc(20%);
+        padding: 1.5em;
+      }
+    }
+  }
+}

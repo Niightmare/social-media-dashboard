@@ -1,0 +1,64 @@
+@import "../lib/utils";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: $Font-family;
+  font-size: $Font-size;
+  background-color: $White;
+  color: $Very-Dark-Blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // border: 2px dotted orange;
+}
+
+.container {
+  padding: 0 1.5em;
+  // border: 1px solid green;
+}
+
+section {
+  margin-top: -3em;
+  z-index: 1;
+}
+
+h1,
+h3 {
+  color: $Very-Dark-Blue;
+}
+
+h2 {
+  color: $Dark-Grayish-Blue;
+}
+
+.dark-theme {
+  background-color: $Very-Dark-Blue-background;
+  color: $Desaturated-Blue;
+  header {
+    background-color: $Very-Dark-Blue-top-BG;
+  }
+
+  small,
+  .card,
+  .overview,
+  .theme-toggler,
+  .attribution a {
+    color: $Desaturated-Blue;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $White;
+  }
+
+  .card {
+    background-color: $Dark-Desaturated-Blue;
+  }
+}

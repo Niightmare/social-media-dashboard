@@ -1,0 +1,119 @@
+@import "../lib/utils";
+
+.card {
+  background-color: $Light-Grayish-Blue;
+  text-align: center;
+  color: $Dark-Grayish-Blue;
+  padding: 2em 0;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  &.facebook:before {
+    background-color: $Facebook;
+  }
+
+  &.twitter:before {
+    background-color: $Twitter;
+  }
+
+  &.instagram:before {
+    background: $Instagram;
+  }
+
+  &.youtube:before {
+    border-top: 3px solid $YouTube;
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: $Weight-700;
+  font-size: 12px;
+//   border: 1px solid red;
+}
+
+.counter {
+  // border: 1px solid lawngreen;
+  padding: 1.5em 0;
+  h3 {
+    font-size: 4em;
+    margin: 0;
+    //   border: 1px solid blueviolet;
+  }
+  p {
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    //   border: 1px solid darkcyan;
+  }
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  font-weight: $Weight-700;
+//   border: 1px solid red;
+  &.up {
+    color: $Lime-Green;
+    &:before {
+      content: url(./images/icon-up.svg);
+      margin-right: 0.3em;
+      margin-top: -0.2em;
+    }
+  }
+
+  &.down {
+    color: $Bright-Red;
+    &:before {
+      content: url(./images/icon-down.svg);
+      margin-right: 0.3em;
+      margin-top: -0.2em;
+    }
+  }
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-bottom: 1.5em;
+//   border: 1px solid green;
+  .left {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    // border: 1px solid fuchsia;
+
+    h4 {
+    //   border: 1px solid red;
+      margin: 0 0 1.5em 0;
+    }
+    h3 {
+      font-size: 2em;
+      margin: 0;
+    //   border: 1px solid red;
+    }
+  }
+  .right {
+    text-align: end;
+    // border: 1px solid saddlebrown;
+    .icon{
+        margin: 0 0 2.5em 0;
+    }
+  }
+}
